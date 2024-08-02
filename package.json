@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node server.mjs",
     "build": "astro check && astro build",
     "server": "concurrently \"node server.mjs\" \"npm run dev\"",
     "preview": "astro preview",
