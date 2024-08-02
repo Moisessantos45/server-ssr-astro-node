@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
+export const prerender = false
+
 const getData= async()=>{
   const response = await fetch('http://localhost:3001/api/data');
   const data = await response.json();
